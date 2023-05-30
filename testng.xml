@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Resources.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Retail Operations">
+        <groups>
+            <run>
+                <include name="IBGInputter"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Test.Scripts.IBG.CDR_Cancellation_IBG">
+            <methods>
+                <include name="CDRCancellationIBG"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+<!--
+    <test verbose="2" preserve-order="true" name="Retail Operations Auth">
+        <groups>
+            <run>
+                <include name="Authorizer"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Test.Scripts.Conventional.CDR_Dealslip">
+            <methods>
+                <include name="authfTOnline"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Retail Operations View SLip">
+        <groups>
+            <run>
+                <include name="Inputter"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Test.Scripts.Conventional.CDR_Dealslip">
+                <methods>
+                    <include name="viewCDRSlip"/>
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+</suite>
